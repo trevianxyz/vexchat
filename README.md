@@ -45,3 +45,33 @@ Doc-Web AI Chat is licensed under the MIT License.
 ---
 
 <p><em>Doc-Web AI Chat is a project powered by <strong>LangChain</strong>, <strong>OpenAI</strong>, and <strong>Streamlit</strong>.</em></p>
+
+```def handle_upload():
+        """
+        Handles the file upload and displays the uploaded file
+        """
+        uploaded_file = st.sidebar.file_uploader("upload", type=["pdf"], label_visibility="collapsed", accept_multiple_files = True)
+        if uploaded_file is not None:
+
+            def show_pdf_file(uploaded_file):
+                file_container = st.expander("Your PDF file :")
+                for i in range(len(uploaded_file)):
+                    with pdfplumber.open(uploaded_file[i]) as pdf:
+                        pdf_text = ""
+                        for page in pdf.pages:
+                            pdf_text += page.extract_text() + "\n\n"
+                    file_container.write(pdf_text)
+            
+            file_extension = ".pdf" 
+
+            if file_extension== ".pdf" : 
+                show_pdf_file(uploaded_file)
+
+        else:
+            st.sidebar.info(
+                "👆 Upload your PDF file to get started..!"
+            )
+            st.session_state["reset_chat"] = True
+
+        #print(uploaded_file)
+        return uploaded_file
