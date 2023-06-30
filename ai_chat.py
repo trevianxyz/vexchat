@@ -74,35 +74,35 @@ class Utilities:
         """
         Handles the file upload and displays the uploaded file
         """
-        uploaded_file = st.sidebar.file_uploader("upload", type=["pdf"], label_visibility="collapsed", accept_multiple_files = True)
+        uploaded_file = st.sidebar.file_uploader("Upload", type=["pdf"], label_visibility="collapsed", accept_multiple_files=True)
+        
         if uploaded_file is not None:
 
+              # If no files are uploaded, read the default file at /data/pdfkbcontent.pdf
+            with open("data/pdfkbcontent.pdf", "rb") as f:
+                uploaded_file = [f]
+
+        else:
+        
             def show_pdf_file(uploaded_file):
-                file_container = st.expander("Your PDF file :")
+                file_container = st.expander("Your PDF file:")
                 for i in range(len(uploaded_file)):
                     with pdfplumber.open(uploaded_file[i]) as pdf:
                         pdf_text = ""
                         for page in pdf.pages:
                             pdf_text += page.extract_text() + "\n\n"
                     file_container.write(pdf_text)
-            
-            file_extension = ".pdf" 
 
-            if file_extension== ".pdf" : 
+            file_extension = ".pdf"
+            
+            if file_extension == ".pdf":
                 show_pdf_file(uploaded_file)
 
-        else:
-            
-            fixed_file_path = "data/pdfkbcontent.pdf"
-            uploaded_file = open(fixed_file_path, 'rb')
-            #data = pd.read_csv(fixed_file_path)
-            
-            # st.sidebar.info(
-            #     "👆 Upload your PDF file to get started..!"
-            # )
-            # st.session_state["reset_chat"] = True
+        st.sidebar.info("👆 Upload your PDF file to get started..!")
+        st.session_state["reset_chat"] = True
 
-        #print(uploaded_file)
+            #show_pdf_file(uploaded_file)
+
         return uploaded_file
 
     @staticmethod
