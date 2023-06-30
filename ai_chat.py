@@ -81,29 +81,15 @@ class Utilities:
             def show_pdf_file(uploaded_file):
                 file_container = st.expander("Your PDF file :")
                 with pdfplumber.open(uploaded_file) as pdf:
-                        pdf_text = ""
-                        for page in pdf.pages:
-                            pdf_text += page.extract_text() + "\n\n"
+                            pdf_text = ""
+                            for page in pdf.pages:
+                                pdf_text += page.extract_text() + "\n\n"
                 file_container.write(pdf_text)
 
             file_extension = ".pdf" 
             show_pdf_file(uploaded_file)
 
         else:
-
-            # def show_pdf_file(uploaded_file):
-            #     file_container = st.expander("Your PDF file :")
-            #     for i in range(len(uploaded_file)):
-            #         with pdfplumber.open(uploaded_file[i]) as pdf:
-            #             pdf_text = ""
-            #             for page in pdf.pages:
-            #                 pdf_text += page.extract_text() + "\n\n"
-            #         file_container.write(pdf_text)
-            
-            # file_extension = ".pdf" 
-
-            # if file_extension== ".pdf" : 
-            #     show_pdf_file(uploaded_file)
 
             st.sidebar.info(
                  "👆 Upload your PDF file to get started..!"
