@@ -75,39 +75,36 @@ class Utilities:
         """
         Handles the file upload and displays the uploaded file
         """
-        uploaded_file = st.sidebar.file_uploader("upload", type=["pdf"], label_visibility="collapsed", accept_multiple_files = True)
 
-        if uploaded_file is not None:
+        #uploaded_file = st.sidebar.file_uploader("upload", type=["pdf"], label_visibility="collapsed", accept_multiple_files = True)
 
-            #uploaded_file = open("data/pdfkbcontent.pdf", "rb")
+        # if uploaded_file is None:
 
-            def show_pdf_file(uploaded_file):
-                file_container = st.expander("Your PDF file :")
-                for i in range(len(uploaded_file)):
-                    with pdfplumber.open(uploaded_file[i]) as pdf:
-                        pdf_text = ""
-                        for page in pdf.pages:
-                            pdf_text += page.extract_text() + "\n\n"
-                    file_container.write(pdf_text)
+        fixed_file_path = "data/pdfkbcontent.pdf"
+        # uploaded_file =  ["/Users/joshstudl/documents/repos/vexai/vexchat/data/pdfkbcontent.pdf"]
+        uploaded_file = st.file_uploader(fixed_file_path, type='pdf')
+        file_extension = ".pdf"
+
+        def show_pdf_file(uploaded_file):
             
-            file_extension = ".pdf" 
+            file_container = st.expander("Your PDF file :")
+            for i in range(len(uploaded_file)):
+                with pdfplumber.open(uploaded_file[i]) as pdf:
+                    pdf_text = ""
+                    for page in pdf.pages:
+                        pdf_text += page.extract_text() + "\n\n"
+                file_container.write(pdf_text)
+        
+        file_extension = ".pdf" 
 
-            if file_extension== ".pdf" : 
-                show_pdf_file(uploaded_file)
+        if file_extension== ".pdf" : 
+            print(uploaded_file)
+            show_pdf_file(uploaded_file)
 
-        else:
-
-            fixed_file_path = "data/pdfkbcontent.pdf"
-            uploaded_file = open(fixed_file_path, 'rb')
-            file_extension = ".pdf"
-
-            if file_extension== ".pdf":
-                show_pdf_file(uploaded_file)
-
-            st.sidebar.info(
-                "👆 Upload your PDF file to get started..!"
-            )
-            st.session_state["reset_chat"] = True
+        st.sidebar.info(
+            "👆 Upload your PDF file to get started..!"
+        )
+        st.session_state["reset_chat"] = True
 
         #print(uploaded_file)
         return uploaded_file
