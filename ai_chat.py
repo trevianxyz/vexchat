@@ -139,7 +139,9 @@ class Layout:
         """
         st.markdown(
             """
-            <h1 style='text-align: center;'> Ask Anything: Your Personal AI Assistant</h1>
+            <h1 style='text-align: center;'> 
+            This is VexChat - ask questions, get answers.
+            </h1>
             """,
             unsafe_allow_html=True,
         )
@@ -186,8 +188,8 @@ class Sidebar:
     def about():
         about = st.sidebar.expander("🧠 About")
         sections = [
-            "#### Welcome to our AI Assistant, a cutting-edge solution to help you find the answers you need quickly and easily. Our AI Assistant is designed to provide you with the most relevant information from a variety of sources, including PDFs, CSVs, and web search.",
-            "#### With our AI Assistant, you can ask questions on any topic, and our intelligent algorithms will search through our vast database to provide you with the most accurate and up-to-date information available. Whether you need help with a school assignment, are researching a topic for work, or simply want to learn something new, our AI Assistant is the perfect tool for you.",
+            "#### This is VexChat - ask questions, get answers.",
+            "#### Ask questions on any topic in the Vex Knowledge Base.",
         ]
         for section in sections:
             about.write(section)
@@ -730,8 +732,8 @@ st.set_page_config(layout="wide", page_icon="💬", page_title="AI Chatbot 🤖"
 st.markdown(
             """
             <div style='text-align: center;'>
-                <h1>Doc-Web AI Chat 💬</h1>
-                <p>AI Chat with Docs and Web!</p>
+                <h1>VexChat 💬</h1>
+                <p>AI Chat with the <span style="color:red";>Vex Knowledge Base</span> and Web</p>
             </div>
             """,
             unsafe_allow_html=True,
