@@ -1,0 +1,98 @@
+TIPS AND TRICKS FOR STARTING THE YEAR WITH VEX
+
+By Alaina Caulkett
+
+August 25, 2022
+
+The ‘back to school’ season is often filled with many different things – excitement for the year ahead, optimism for the learning opportunities, eagerness to meet your new students, as well as trepidation about a vast array of unknowns, anxiety about new materials or initiatives, and everything in between. The ever growing ‘to do’ list can seem overwhelming, but a great thing about the VEX PD+ Community is that we can support one another and share our own experiences as educators to help everyone feel empowered and excited to teach. In this article you will find tips and tricks for each VEX platform so you know you will be ready to get started teaching in your VEX Classroom.
+
+No matter what you are teaching, your year will start off with setting routines with your students. Aimee DeFoe, Senior Education Developer, covers ways to make teaching classroom procedures and routines fun in the Back to School Doesn’t Mean Back to Boring video [https://pd.vex.com/videos/back-to-school-doesnt-mean-back-to-boring].
+
+back to school [/sites/default/files/inline-images/image7_0.png]https://pd.vex.com/videos/back-to-school-doesnt-mean-back-to-boring
+
+Keep the excitement going and use some of the research-based recommendations from Jason McKenna, Director of Global Education Strategy, on how to keep students engaged through challenges in the Connecting Research and Teaching - Student Engagement video [https://pd.vex.com/videos/connecting-research-and-teaching-student-engagement].
+
+hason [/sites/default/files/inline-images/image2_9.png]https://pd.vex.com/videos/connecting-research-and-teaching-student-engagement
+
+Now that you are excited and know how to get your students engaged and motivated, let’s go over some platform-specific tips for getting started!
+
+
+VEX 123
+
+123 robot [/sites/default/files/inline-images/image3_5.png]
+
+These two videos are fantastic for helping get your VEX 123 Classroom Bundles and your classroom space set up and organized:
+
+ * Best Practices for Getting Started with Your VEX 123 Bundle [https://pd.vex.com/videos/best-practices-for-getting-started-with-your-123-bundle]
+ * Building a VEX 123 Learning Center [https://pd.vex.com/videos/building-a-vex-123-learning-center]
+
+Ready to get started with your students? The first part of the Meet Your Robot STEM Lab Unit [https://education.vex.com/stemlabs/123/meet-your-robot] is reading the Meet Your Robot PDF Book together! This article explains more about how to use the book as a teaching tool and introduce VEX 123. [https://kb.vex.com/hc/en-us/articles/4412365294740-Using-the-Meet-Your-Robot-Book-as-a-Teaching-Tool]
+
+What’s next? Check out the VEX 123 Pacing Guide [https://drive.google.com/open?id=1-DucwEgwDKvI8YyG8tIUb14Q9nkXbPIgYiJMmJoBs1Q] to see more recommendations of activities and STEM Lab Units for starting off the school year with VEX 123.
+
+
+VEX GO
+
+VEX GO [/sites/default/files/inline-images/image5_4.png]
+
+Watch these videos for ideas on how to get your VEX GO Classroom Bundles and classroom space set up and organized:
+
+ * Best Practices for Getting Started with Your VEX GO Bundle [https://pd.vex.com/videos/best-practices-for-getting-started-with-your-vex-go-bundle]
+ * Building a VEX GO Learning Center [https://pd.vex.com/videos/creating-a-learning-center-with-vex-go]
+
+Ready to get started with your students? Use Get Ready...Get VEX...GO! PDF book [https://kb.vex.com/hc/en-us/articles/360058459512-Using-the-Get-Ready-Get-VEX-GO-Book-as-a-Teaching-Tool] to introduce VEX GO to your students and create their first build, J.O.S.H. This article explains more about how to use the book as a teaching tool and introduction to VEX GO. [https://kb.vex.com/hc/en-us/articles/360058459512-Using-the-Get-Ready-Get-VEX-GO-Book-as-a-Teaching-Tool]
+
+What’s next? Check out the VEX GO Pacing Guide [https://drive.google.com/open?id=1PC8W1fR6xXR1q0XjBRCm3if_5PTncxI9SYjyoTakzoc] to see more recommendations of activities and STEM Lab Units for starting off the school year with VEX GO.
+
+
+VEX IQ
+
+iq robot [/sites/default/files/inline-images/image4_1.png]
+
+Activities are a great way to get started with your students without diving into a classroom competition. Watch the Using VEX IQ Activities video [https://pd.vex.com/videos/using-vex-iq-activities] for more information on how to get started. 
+
+Activities made to help you start the year off: 
+
+ * Introduce the Kit to your students with the Scavenger Hunt [https://docs.google.com/document/d/1b_-KPn_RCwQOuDbinaMxHU2VMIjY-TKd7pHV6SGLpHc/edit] 
+ * Practice building structures with Hang Out [https://docs.google.com/document/d/1rnpQ1VDEIH3lhpHp8fl-YybA034D73LZIz_rRy6mufc/edit#]
+
+After students are familiar with VEX IQ pieces and the kits, have them build their first robot! Use the Building Your First Robot video [https://pd.vex.com/videos/building-your-first-vex-iq-2nd-gen-robot] if students need additional guidance or tips while building.
+
+What’s next? Check out the VEX IQ Pacing Guide [https://docs.google.com/spreadsheets/d/1QmNfN8X9Trpr8UhcZAGPa-akSaPDrFxsoluerQ0AMQk/edit#gid=277290212] to see a recommended sequence of activities and classroom competition STEM Labs for use in your classroom.
+
+
+VEX EXP
+
+exp robot [/sites/default/files/inline-images/image1_7.png]
+
+VEX EXP Kits have many components, so it’s important that students understand the different parts of the Kit and how they work together. I recommend starting the year off using activities like the Scavenger Hunt [https://docs.google.com/document/d/1O6fM6uu95Akg-KNJ2O6kpXMsOYWwjq9a1CoMQRBTrK0/edit#] to make sure students are familiar with the kit. 
+
+You can also use a video like EXP Hardware [https://pd.vex.com/videos/vex-exp-hardware] to discuss some of the different components and how they work together to connect things like C-Channels, shafts, etc. 
+
+After students are familiar with VEX EXP pieces and the kits, have them build their first robot! Use the Building Your First Robot video [https://pd.vex.com/videos/building-your-first-robot?playlist=get-started-with-vex-exp&page=0] if students need additional guidance or tips while building.
+
+What’s next? Check out the VEX EXP Pacing Guide [https://docs.google.com/spreadsheets/d/1-VMKy7wOFy435QKlUOKSfFBRwafNg_XB1UXJhLQQ5KY/edit#gid=1222661286] to see a recommended sequence of activities and classroom competition STEM Labs for use in your classroom.
+
+
+VEXCODE VR
+
+vr robot [/sites/default/files/inline-images/image6_3.png]
+
+These two videos are fantastic for helping get your VEX 123 Classroom Bundles and your classroom space set up and organized:
+
+ * Best Practices for Getting Started with Your VEX 123 Bundle [https://pd.vex.com/videos/best-practices-for-getting-started-with-your-123-bundle]
+ * Building a VEX 123 Learning Center [https://pd.vex.com/videos/building-a-vex-123-learning-center]
+
+VEXcode VR activities are a great way to get your students working on self-directed challenges. See this video to learn more about using VEXcode VR activities. [https://pd.vex.com/videos/using-vexcode-vr-activities]
+
+Because all of these activities are completed in VEXcode VR on a device, it is good practice to get your students to be active in their learning. In the Making VEXcode VR an Active Learning Experience video [https://pd.vex.com/videos/making-vexcode-vr-an-active-learning-experience], you can learn how to get students engaged through planning projects, practicing concepts, reflecting on and extending their learning in off-screen and physically active ways while using VEXcode VR as a learning tool.
+
+What’s next? Check out the 1:1 Pacing Guide [https://docs.google.com/spreadsheets/d/1zEM-E7mUyvXXZm9fbZ4nhuE-1atZpt1skFuUOX-AYwc/edit#gid=337666077] to see a sequence of activities and Units for introducing Computer Science concepts to your students.
+
+
+LOOKING FOR MORE?
+
+ * Get certified! [https://certifications.vex.com/educator] VEX Educator Certifications are free and cover everything you need to get started with VEX Robotics in your classroom.
+ * Ask a question in the VEX PD+ Community [https://plc.pd.vex.com/]! We would love to hear about your classroom and how you use VEX in your classroom. 
+ * Watch a ‘Getting Started’ PD+ Playlist [https://pd.vex.com/playlists] on for more platform-specific information about getting started with VEX in your setting.
+

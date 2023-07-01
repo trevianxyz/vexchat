@@ -62,9 +62,9 @@ Doc-Web AI Chat is licensed under the MIT License.
                             pdf_text += page.extract_text() + "\n\n"
                     file_container.write(pdf_text)
             
-            file_extension = ".pdf" 
+            file_extension = ".pdf"
 
-            if file_extension== ".pdf" : 
+            if file_extension== ".pdf" :
                 show_pdf_file(uploaded_file)
 
         else:
@@ -75,3 +75,6 @@ Doc-Web AI Chat is licensed under the MIT License.
 
         #print(uploaded_file)
         return uploaded_file
+
+
+                file.getvalue().decode('utf-8').splitlines()

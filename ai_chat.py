@@ -1,5 +1,6 @@
 import streamlit as st
 from streamlit_chat import message
+from streamlit.runtime.uploaded_file_manager import UploadedFile
 from langchain.chat_models import ChatOpenAI
 from langchain.chains import ConversationalRetrievalChain
 from langchain.prompts.prompt import PromptTemplate
@@ -72,32 +73,64 @@ class Utilities:
     
     @staticmethod
     def handle_upload():
-        """
-        Handles the file upload and displays the uploaded file
-        """
-        uploaded_file = 'data/vex-research.pdf'
-        #uploaded_file = st.sidebar.file_uploader("upload", type=["pdf"], label_visibility="collapsed", accept_multiple_files = True)
+        
+        Filenames = [
+                    "data/pdfkbcontent.pdf",
+                    "data/vex-research.pdf",
+                ]
+
+        # if option == "Knowledge Base": file_name = "data/pdfkbcontent.pdf"
+        # else: file_name = "data/vex-research.pdf"
+        #     # Open the file nonetheless of the display outcome
+        
+        for file_name in Filenames:
+            with open(file_name) as fl:
+                uploaded_file = fl.read()
+                    
         if uploaded_file is not None:
+            
+            import PyPDF2
+            @st.cache_data
+            def load_docs(files):
+                st.sidebar.info("`Reading doc ...`")
+                all_text = ""
+                for file_path in files:
+                    file_extension = os.path.splitext(file_path.name)[1]
+                    if file_extension == ".pdf":
+                        pdf_reader = PyPDF2.PdfReader(file_path)
+                        text = ""
+                        for page in pdf_reader.pages:
+                            text += page.extract_text()
+                        all_text += text
+                    elif file_extension == ".txt":
+                        stringio = StringIO(file_path.getvalue().decode("utf-8"))
+                        text = stringio.read()
+                        all_text += text
+                    else:
+                        st.warning('Please provide txt or pdf.', icon="⚠️")
+                return all_text
+
+
             def show_pdf_file(uploaded_file):
                 file_container = st.expander("Your PDF file :")
                 for i in range(len(uploaded_file)):
-                    with pdfplumber.open(uploaded_file) as pdf:
+                    with pdfplumber.open(uploaded_file[i]) as pdf:
                         pdf_text = ""
                         for page in pdf.pages:
                             pdf_text += page.extract_text() + "\n\n"
                     file_container.write(pdf_text)
+                    
+                    file_extension = ".pdf"
 
-            file_extension = ".pdf" 
+                    if file_extension== ".pdf" :
+                        show_pdf_file(uploaded_file)
 
-            if file_extension== ".pdf" : 
-                show_pdf_file(uploaded_file)
+        # else:
+        #     st.sidebar.info(
+        #         "👆 Upload your PDF file to get started..!"
+        #     )
+        #     st.session_state["reset_chat"] = True
 
-        else:
-
-            st.sidebar.info(
-                 "👆 Upload your PDF file to get started..!"
-             )
-            st.session_state["reset_chat"] = False
         #print(uploaded_file)
         return uploaded_file
 
